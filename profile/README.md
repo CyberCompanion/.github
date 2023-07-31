@@ -14,7 +14,7 @@ Discord bot for the community
 [MIT](https://choosealicense.com/licenses/mit/)
 
 
-![Logo](https://fontom.myftp.org/owncloud/index.php/apps/files_sharing/ajax/publicpreview.php?x=1921&y=544&a=true&file=Bangarangalt_ava.png&t=grSZxyoPR196y89&scalingup=0)
+![Logo](https://cdn.discordapp.com/avatars/822815101979328562/c34169141c7903633bd2a5d6908ec621.webp?size=4096)
 
 
 ## Support
@@ -29,6 +29,8 @@ For support, join our [Discord](https://discord.gg/r26J4xwZ4C)
 **API:** JavaScript
 
 **Dashboard:** Next.JS
+
+**Database:** JavaScript
 
 
 ## Used By
