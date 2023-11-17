@@ -3,6 +3,11 @@
 
 Discord bot for the community
 
+[![Action API](https://github.com/Discordnnect/api/actions/workflows/ssh.yml/badge.svg)](https://github.com/Discordnnect/api/actions/workflows/ssh.yml)
+[![Action Bot](https://github.com/Discordnnect/bot/actions/workflows/ssh.yml/badge.svg)](https://github.com/Discordnnect/bot/actions/workflows/ssh.yml)
+[![Action Dashboard](https://github.com/Discordnnect/dashboard/actions/workflows/ssh.yml/badge.svg)](https://github.com/Discordnnect/dashboard/actions/workflows/ssh.yml)
+[![Action Database](https://github.com/Discordnnect/database/actions/workflows/ssh.yml/badge.svg)](https://github.com/Discordnnect/database/actions/workflows/ssh.yml)
+[![Action Global](https://github.com/Discordnnect/global/actions/workflows/ssh.yml/badge.svg)](https://github.com/Discordnnect/global/actions/workflows/ssh.yml)
 
 ## Authors
 
