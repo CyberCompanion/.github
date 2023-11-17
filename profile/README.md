@@ -3,12 +3,15 @@
 
 Discord bot for the community
 
-API : [![Action API](https://github.com/Discordnnect/api/actions/workflows/ssh.yml/badge.svg)](https://github.com/Discordnnect/api/actions/workflows/ssh.yml)
+API [![Action API](https://github.com/Discordnnect/api/actions/workflows/ssh.yml/badge.svg)](https://github.com/Discordnnect/api/actions/workflows/ssh.yml)
 </br>
-Bot : [![Action Bot](https://github.com/Discordnnect/bot/actions/workflows/ssh.yml/badge.svg)](https://github.com/Discordnnect/bot/actions/workflows/ssh.yml)
-[![Action Dashboard](https://github.com/Discordnnect/dashboard/actions/workflows/ssh.yml/badge.svg)](https://github.com/Discordnnect/dashboard/actions/workflows/ssh.yml)
-[![Action Database](https://github.com/Discordnnect/database/actions/workflows/ssh.yml/badge.svg)](https://github.com/Discordnnect/database/actions/workflows/ssh.yml)
-[![Action Global](https://github.com/Discordnnect/global/actions/workflows/ssh.yml/badge.svg)](https://github.com/Discordnnect/global/actions/workflows/ssh.yml)
+Bot [![Action Bot](https://github.com/Discordnnect/bot/actions/workflows/ssh.yml/badge.svg)](https://github.com/Discordnnect/bot/actions/workflows/ssh.yml)
+</br>
+Dashboard [![Action Dashboard](https://github.com/Discordnnect/dashboard/actions/workflows/ssh.yml/badge.svg)](https://github.com/Discordnnect/dashboard/actions/workflows/ssh.yml)
+</br>
+Database [![Action Database](https://github.com/Discordnnect/database/actions/workflows/ssh.yml/badge.svg)](https://github.com/Discordnnect/database/actions/workflows/ssh.yml)
+</br>
+Global [![Action Global](https://github.com/Discordnnect/global/actions/workflows/ssh.yml/badge.svg)](https://github.com/Discordnnect/global/actions/workflows/ssh.yml)
 
 ## Authors
 
