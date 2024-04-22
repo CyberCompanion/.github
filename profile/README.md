@@ -12,17 +12,11 @@ Discord bot for the community
 - [@Fontom71](https://github.com/Fontom71)
 
 
-## License
-
-[MIT](https://choosealicense.com/licenses/mit/)
-
-
-![Logo](https://cdn.discordapp.com/avatars/822815101979328562/c34169141c7903633bd2a5d6908ec621.webp?size=4096)
-
-
 ## Support
 
 For support, join our [Discord](https://discord.gg/r26J4xwZ4C)
+
+Report a bug [here](https://github.com/CyberCompanion/issues)
 
 
 ## Tech Stack
