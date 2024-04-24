@@ -3,10 +3,6 @@
 
 Discord bot for the community
 
-| Name      | Action     |
-| :-------- | :--------- |
-| Projet | [![Action Global](https://github.com/Discordnnect/global/actions/workflows/ssh.yml/badge.svg)](https://github.com/Discordnnect/global/actions/workflows/ssh.yml) |
-
 ## Authors
 
 - [@Fontom71](https://github.com/Fontom71)
