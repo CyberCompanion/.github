@@ -1,5 +1,5 @@
 
-# Discordnnect
+# Cybercompanion
 
 Discord bot for the community
 
@@ -32,5 +32,5 @@ This project is used by the following Discord servers:
 
 - 🏎 The Mechanic Community
 - 🚛 Transport-Express-Actif
-- Discordnnect support 😁
+- Cybercompanion support 😁
 
