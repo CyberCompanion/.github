@@ -5,7 +5,7 @@ Discord bot for the community
 
 ## Authors
 
-- [@Fontom71](https://github.com/Fontom71)
+- [@fontoms](https://github.com/fontoms)
 
 
 ## Support
