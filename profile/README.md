@@ -5,7 +5,7 @@
   
   **Le Bot Discord français nouvelle génération**
   
-  [![Discord](https://img.shields.io/discord/1040332225046134927?color=7289da&logo=discord&logoColor=white&label=Discord)](https://discord.gg/cybercompanion)
+  [![Discord](https://img.shields.io/discord/1040332225046134927?color=7289da&logo=discord&logoColor=white&label=Discord)](https://cybercompanion.fr/discord)
   [![GitHub issues](https://img.shields.io/github/issues/CyberCompanion/issues)](https://github.com/CyberCompanion/issues/issues)
   [![License](https://img.shields.io/badge/License-Propriétaire-red.svg)](LICENSE)
 </div>
