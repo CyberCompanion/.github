@@ -75,7 +75,7 @@ Notre équipe est composée de développeurs passionnés, de designers talentueu
 
 Besoin d'aide ou vous avez une question ? Nous sommes là pour vous !
 
-- **[Serveur Discord de support](https://discord.gg/cybercompanion)** - Rejoignez notre communauté pour obtenir de l'aide rapidement
+- **[Serveur Discord de support](https://cybercompanion.fr/discord)** - Rejoignez notre communauté pour obtenir de l'aide rapidement
 - **[Documentation](https://cybercompanion.fr/documentation)** - Guides détaillés et références
 - **[GitHub Issues](https://github.com/CyberCompanion/issues)** - Signaler un bug ou suggérer une nouvelle fonctionnalité pour tous nos projets
 - **[FAQ](https://cybercompanion.fr/faq)** - Réponses aux questions fréquemment posées
@@ -139,7 +139,7 @@ CyberCompanion est un projet sous licence propriétaire. © 2023-2025 Cybercompa
   <a href="https://cybercompanion.fr">
     <img src="https://img.shields.io/badge/Website-cybercompanion.fr-blue?style=for-the-badge" alt="Site Web" />
   </a>
-  <a href="https://discord.gg/uQJCrZBhbu">
+  <a href="https://cybercompanion.fr/discord">
     <img src="https://img.shields.io/badge/Discord-Rejoindre-7289DA?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" />
   </a>
   <a href="https://github.com/CyberCompanion">
