@@ -12,16 +12,19 @@
 
 ## 📋 À propos
 
-CyberCompanion est un bot Discord polyvalent développé spécifiquement pour la communauté francophone. Notre mission est de fournir une solution tout-en-un pour améliorer l'expérience des utilisateurs Discord avec des fonctionnalités avancées de modération, un système d'économie, des mini-jeux, et bien plus encore.
+CyberCompanion est un bot Discord multifonctionnel complet développé spécifiquement pour la communauté francophone. Notre mission est de fournir une solution tout-en-un pour améliorer l'expérience des utilisateurs Discord avec des fonctionnalités avancées de modération, un système d'économie, de la musique, et bien plus encore.
 
 ## 🚀 Fonctionnalités principales
 
-- **Modération avancée** : Système d'avertissements, auto-modération, anti-spam, anti-raid, logs détaillés
-- **Système de niveaux** : Cartes de niveaux personnalisables, rôles automatiques et classements interactifs
-- **Économie & mini-jeux** : Système économique complet avec boutique, emplois, paris et divers mini-jeux
-- **Intelligence artificielle** : Conversations naturelles, création d'images et résumé de textes
-- **Automatisations** : Auto-rôles, messages personnalisés d'arrivée/départ, annonces programmées
-- **Dashboard web** : Interface intuitive pour configurer toutes les fonctionnalités sans commandes complexes
+- **🎵 Système de musique** : Intégration avec YouTube, Spotify, SoundCloud, Deezer pour la lecture audio
+- **🎟️ Système de tickets** : Création automatique de salons privés pour le support utilisateur
+- **🎤 Gestion des salons vocaux temporaires** : Création automatique de salons vocaux personnalisables avec permissions
+- **📊 Système de niveaux et XP** : Progression textuelle et vocale avec classements et récompenses, cartes de niveaux personnalisables
+- **🛡️ Sécurité avancée** : Anti-spam, anti-raid, détection d'alts, filtrage de contenu, système d'avertissements et logs détaillés
+- **💰 Système économique** : Monnaie virtuelle, giveaways, paiements, boutique, emplois, paris et divers mini-jeux
+- **📋 Modération avancée** : Sanctions temporaires, auto-modération, logs complets
+- **🎉 Événements & Automatisations** : Messages de bienvenue/départ personnalisés, suggestions, annonces programmées, auto-rôles
+- **💻 Dashboard web** : Interface intuitive pour configurer toutes les fonctionnalités sans commandes complexes
 
 ## 💻 Stack technologique
 
