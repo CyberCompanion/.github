@@ -1,18 +1,14 @@
 name: Mise à jour des statistiques
-
 on:
   schedule:
     # Exécution le lundi et jeudi à 8h00 UTC
     - cron: "0 8 * * 1,4"
   workflow_dispatch: # Permet de déclencher manuellement le workflow
-
 jobs:
   update-stats:
     runs-on: ubuntu-latest
-
     permissions:
       contents: write
-
     steps:
       - name: Checkout du dépôt
         uses: actions/checkout@v4
@@ -28,6 +24,8 @@ jobs:
         id: get-stats
         env:
           DISCORD_TOKEN: ${{ secrets.DISCORD_BOT_TOKEN }}
+          MECHANIC_GUILD_ID: ${{ secrets.MECHANIC_GUILD_ID }}
+          NUIT_ETOILEE_GUILD_ID: ${{ secrets.NUIT_ETOILEE_GUILD_ID }}
         run: |
           # Récupération des statistiques via l'API Discord
           RESPONSE=$(curl -s -H "Authorization: Bot $DISCORD_TOKEN" \
@@ -48,50 +46,78 @@ jobs:
             TOTAL_USERS=$((TOTAL_USERS + MEMBERS))
             sleep 0.5  # Respecter les rate limits de Discord
           done
-
           echo "users=$TOTAL_USERS" >> $GITHUB_OUTPUT
+
+          # Récupération des membres des serveurs communautaires
+          MECHANIC_DATA=$(curl -s -H "Authorization: Bot $DISCORD_TOKEN" \
+            "https://discord.com/api/v10/guilds/$MECHANIC_GUILD_ID?with_counts=true")
+          MECHANIC_MEMBERS=$(echo "$MECHANIC_DATA" | jq -r '.approximate_member_count // 0')
+          echo "mechanic_members=$MECHANIC_MEMBERS" >> $GITHUB_OUTPUT
+
+          NUIT_DATA=$(curl -s -H "Authorization: Bot $DISCORD_TOKEN" \
+            "https://discord.com/api/v10/guilds/$NUIT_ETOILEE_GUILD_ID?with_counts=true")
+          NUIT_MEMBERS=$(echo "$NUIT_DATA" | jq -r '.approximate_member_count // 0')
+          echo "nuit_members=$NUIT_MEMBERS" >> $GITHUB_OUTPUT
+
           echo "✅ Serveurs: $SERVERS | Utilisateurs: $TOTAL_USERS"
+          echo "✅ The Mechanic: $MECHANIC_MEMBERS | Nuit Étoilée: $NUIT_MEMBERS"
 
       - name: Mise à jour du README
         env:
           SERVERS: ${{ steps.get-stats.outputs.servers }}
           USERS: ${{ steps.get-stats.outputs.users }}
+          MECHANIC_MEMBERS: ${{ steps.get-stats.outputs.mechanic_members }}
+          NUIT_MEMBERS: ${{ steps.get-stats.outputs.nuit_members }}
         run: |
-          # Script de mise à jour du README
           node << 'EOF'
           const fs = require('fs');
           const path = require('path');
-
           const readmePath = path.join(process.cwd(), 'profile', 'README.md');
           let content = fs.readFileSync(readmePath, 'utf8');
 
           // Récupération des statistiques depuis les variables d'environnement
           const servers = parseInt(process.env.SERVERS) || 75;
           const users = parseInt(process.env.USERS) || 13800;
+          const mechanicMembers = parseInt(process.env.MECHANIC_MEMBERS) || 2400;
+          const nuitMembers = parseInt(process.env.NUIT_MEMBERS) || 1800;
 
-          // Formatage des nombres
+          // Formatage des nombres avec arrondi à la centaine
           const serversFormatted = servers + '+';
-          const usersFormatted = users.toLocaleString('fr-FR').replace(/\s/g, ' ') + '+';
+          const roundedUsers = Math.round(users / 100) * 100;
+          const usersFormatted = roundedUsers.toLocaleString('fr-FR').replace(/\s/g, ' ') + '+';
+          const roundedMechanic = Math.round(mechanicMembers / 100) * 100;
+          const mechanicFormatted = roundedMechanic.toLocaleString('fr-FR').replace(/\s/g, ' ');
+          const roundedNuit = Math.round(nuitMembers / 100) * 100;
+          const nuitFormatted = roundedNuit.toLocaleString('fr-FR').replace(/\s/g, ' ');
 
-          // Regex pour trouver et remplacer uniquement les serveurs et utilisateurs
+          // Mise à jour des stats globales
           const statsPattern = /(## 📊 Statistiques\s+<div align="center">\s+<table>\s+<tr>\s+<td><strong>Serveurs<\/strong><\/td>\s+<td>)[^<]+(<\/td>\s+<\/tr>\s+<tr>\s+<td><strong>Utilisateurs<\/strong><\/td>\s+<td>)[^<]+(<\/td>)/s;
+          content = content.replace(statsPattern, `$1${serversFormatted}$2${usersFormatted}$3`);
 
+          // Mise à jour de The Mechanic Community
           content = content.replace(
-            statsPattern,
-            `$1${serversFormatted}$2${usersFormatted}$3`
+            /(\*\*🏎️ The Mechanic Community\*\* - Communauté automobile avec plus de )[0-9 ]+( membres)/,
+            `$1${mechanicFormatted}$2`
+          );
+
+          // Mise à jour de Nuit Étoilée
+          content = content.replace(
+            /(\*\*✨ Nuit Etoilée\*\* - Communauté de passionnés de musique \(\+ de )[0-9 ]+( membres\))/,
+            `$1${nuitFormatted}$2`
           );
 
           fs.writeFileSync(readmePath, content, 'utf8');
           console.log('✅ Statistiques mises à jour:');
           console.log(`   Serveurs: ${serversFormatted}`);
           console.log(`   Utilisateurs: ${usersFormatted}`);
+          console.log(`   The Mechanic: ${mechanicFormatted} membres`);
+          console.log(`   Nuit Étoilée: ${nuitFormatted} membres`);
           EOF
 
       - name: Commit et push des modifications
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
-
           if git diff --quiet; then
             echo "Aucune modification à commiter"
           else
