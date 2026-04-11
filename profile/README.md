@@ -2,12 +2,13 @@
 
 <div align="center">
   <img src="https://cybercompanion.fr/banner.png" alt="CyberCompanion Banner" width="600px" />
-  
-  **Le Bot Discord français nouvelle génération**
-  
-  [![Discord](https://img.shields.io/discord/1040332225046134927?color=7289da&logo=discord&logoColor=white&label=Discord)](https://cybercompanion.fr/discord)
-  [![GitHub issues](https://img.shields.io/github/issues/CyberCompanion/issues)](https://github.com/CyberCompanion/issues/issues)
-  [![License](https://img.shields.io/badge/License-Propriétaire-red.svg)](LICENSE)
+
+**Le Bot Discord français nouvelle génération**
+
+[![Discord](https://img.shields.io/discord/1040332225046134927?color=7289da&logo=discord&logoColor=white&label=Discord)](https://cybercompanion.fr/discord)
+[![GitHub issues](https://img.shields.io/github/issues/CyberCompanion/issues)](https://github.com/CyberCompanion/issues/issues)
+[![License](https://img.shields.io/badge/License-Propriétaire-red.svg)](../LICENSE)
+
 </div>
 
 ## 📋 À propos
@@ -16,15 +17,13 @@ CyberCompanion est un bot Discord multifonctionnel complet développé spécifiq
 
 ## 🚀 Fonctionnalités principales
 
-- **🎵 Système de musique** : Intégration avec YouTube, Spotify, SoundCloud, Deezer pour la lecture audio
-- **🎟️ Système de tickets** : Création automatique de salons privés pour le support utilisateur
-- **🎤 Gestion des salons vocaux temporaires** : Création automatique de salons vocaux personnalisables avec permissions
-- **📊 Système de niveaux et XP** : Progression textuelle et vocale avec classements et récompenses, cartes de niveaux personnalisables
-- **🛡️ Sécurité avancée** : Anti-spam, anti-raid, détection d'alts, filtrage de contenu, système d'avertissements et logs détaillés
-- **💰 Système économique** : Monnaie virtuelle, giveaways, paiements, boutique, emplois, paris et divers mini-jeux
-- **📋 Modération avancée** : Sanctions temporaires, auto-modération, logs complets
-- **🎉 Événements & Automatisations** : Messages de bienvenue/départ personnalisés, suggestions, annonces programmées, auto-rôles
-- **💻 Dashboard web** : Interface intuitive pour configurer toutes les fonctionnalités sans commandes complexes
+- **🤖 Bot Discord complet** : Modération, sécurité, économie, niveaux, jeux, tickets, suggestions, giveaways et outils communautaires
+- **🎵 Musique avancée** : DisTube multi-plateforme (YouTube, SoundCloud, Deezer, Spotube, yt-dlp), playlists, autoplay et filtres
+- **💎 Premium Stripe** : Plans Standard/Pro/Ultimate, essai gratuit, facturation, annulation et gestion d'abonnement
+- **🌍 Internationalisation** : 30 langues, localisations natives des slash commands et contexte par serveur
+- **📈 Observabilité & fiabilité** : Prometheus, Grafana, logs structurés, sharding avancé et communication inter-shards
+- **💻 Dashboard web dédié** : Administration par serveur, pages premium, contrôle musique, statut des services et support utilisateur
+- **📚 Écosystème documentation** : Guides, FAQ, catalogue des commandes, pages légales et ressources pour utilisateurs et admins
 
 ## 💻 Stack technologique
 
@@ -134,7 +133,7 @@ Consultez notre [tableau de projets GitHub](https://github.com/orgs/CyberCompani
 
 ## 📄 Licence
 
-CyberCompanion est un projet sous licence propriétaire. © 2023-2025 Cybercompanion - Tous droits réservés.
+CyberCompanion est un projet sous licence propriétaire. © 2023-2026 CyberCompanion - Tous droits réservés. Voir [LICENSE](../LICENSE).
 
 ---
 
