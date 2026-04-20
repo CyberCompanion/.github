@@ -100,7 +100,7 @@ CyberCompanion est fièrement utilisé par de nombreux serveurs Discord francoph
     </tr>
     <tr>
       <td><strong>Utilisateurs</strong></td>
-      <td>17 100+</td>
+      <td>17 000+</td>
     </tr>
     <tr>
       <td><strong>Commandes exécutées</strong></td>
