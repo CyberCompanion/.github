@@ -87,7 +87,7 @@ Besoin d'aide ou vous avez une question ? Nous sommes là pour vous !
 CyberCompanion est fièrement utilisé par de nombreux serveurs Discord francophones, notamment :
 
 - **🏎️ The Mechanic Community** - Communauté automobile avec plus de 2 400 membres
-- **✨ Nuit Etoilée** - Communauté de passionnés de musique (+ de 3 000 membres)
+- **✨ Nuit Etoilée** - Communauté de passionnés de musique (+ de 3 100 membres)
 - **🤖 Cybercompanion Support** - Notre serveur officiel de support
 
 ## 📊 Statistiques
@@ -96,11 +96,11 @@ CyberCompanion est fièrement utilisé par de nombreux serveurs Discord francoph
   <table>
     <tr>
       <td><strong>Serveurs</strong></td>
-      <td>132+</td>
+      <td>131+</td>
     </tr>
     <tr>
       <td><strong>Utilisateurs</strong></td>
-      <td>20 300+</td>
+      <td>20 400+</td>
     </tr>
     <tr>
       <td><strong>Commandes exécutées</strong></td>
