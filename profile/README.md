@@ -96,11 +96,11 @@ CyberCompanion est fièrement utilisé par de nombreux serveurs Discord francoph
   <table>
     <tr>
       <td><strong>Serveurs</strong></td>
-      <td>183+</td>
+      <td>184+</td>
     </tr>
     <tr>
       <td><strong>Utilisateurs</strong></td>
-      <td>21 800+</td>
+      <td>21 900+</td>
     </tr>
     <tr>
       <td><strong>Commandes exécutées</strong></td>
